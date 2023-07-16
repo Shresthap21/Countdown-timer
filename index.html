@@ -13,7 +13,7 @@
         <div class="container">
             <div class="text" id="start">We're coming!</div>
             <div class="datebtn">
-                <input type="datetime-local" name="" id="date">
+                <input type="text" name="" id="date" placeholder="Enter date and time" onfocus="this.type='datetime-local'" onblur="this.type='text'">
                 <button id="start-btn" onclick="startUp()"><img class="icons" src="icons8-play-50.png" alt=""></button>
                 <button id="reset-btn" onclick="reset()"><img class="icons" src="icons8-reset-50.png" alt=""></button>
             </div>
@@ -52,7 +52,7 @@
             const end = new Date(endDate);
             const start = new Date();
             const diff = end-start;
-            console.log(diff)
+            if (diff<0) return;
             inputGiven[1].value = Math.floor(diff/1000/60/60/24);
             inputGiven[2].value = Math.floor((diff/1000/60/60)%24);
             inputGiven[3].value = Math.floor((diff/1000/60)%60);
