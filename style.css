@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("https://img.freepik.com/free-photo/wet-monstera-deliciosa-plant-leaves-garden_53876-139812.jpg?w=996&t=st=1689441048~exp=1689441648~hmac=40a0ea2d204f8b57747deb8df53f864c31d184751f05216ec98ee9651952dfcd");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 10px 30px;
+}
+.main{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.datebtn{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 70px;
+}
+.container{
+    text-align: center;
+    border:1px solid black;
+    width: 400px;
+    height:380px;
+    backdrop-filter: blur(10px);
+    border:0px;
+    border-radius: 18px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.153);
+}
+.inputs{
+    display: flex;
+    justify-content: center;
+    border: 0px solid black;
+    border-radius: 5px;
+    margin-top: 80px;
+}
+.hours{
+    color:white;
+    font-size: 20px;
+    text-align: center;
+    width:30px;
+    border:0px ;
+    border-radius: 5px;
+    margin:0px 20px 0px 20px;
+    background-color: transparent;
+}
+.text{
+    color:white;
+    font-size: 30px;
+    font-weight: bold;
+}
+#start{
+    margin:30px;
+}
+#date{
+    background-color: #ffffff9e;
+    border: 0px;
+    border-radius: 15px;
+    padding:7px;
+}
+label{
+    font-size: 14px;
+    color: white;
+}
+button{
+    border:0px;
+    border-radius: 30px;
+    padding: 9px;
+    background-color: #ffffff9e;
+    
+}
+.icons{
+    width:20px;
+    display:flex;
+    align-items: center;
+}
